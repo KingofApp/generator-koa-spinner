@@ -1,0 +1,22 @@
+{
+  "name": "<%= spinnerName %>",
+  "identifier": "koapp-spinner-<%= spinnerName %>",
+  "description": {
+    "en-US" : "<%= spanishDescription %>",
+    "es-ES" : "<%= englishDescription %>"
+  },
+  "version": "0.0.1",
+  "author": "<%= userName %>",
+  "category": ["spinner"],
+  "price": <%= price %>,
+  "platforms": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "showOn": {
+    "market": <%= showOnMarket %>
+  },
+  "subscription": false,
+  "main": "spinners/koapp-spinner-<%= spinnerName %>/koapp-spinner-<%= spinnerName %>.html"
+}

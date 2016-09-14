@@ -1,0 +1,29 @@
+{
+  "name": "koapp-spinner-<%= spinnerName %>",
+  "authors": "<%= userName %>",
+    "description": "<%= englishDescription %>",
+  "main": "koapp-spinner-<%= spinnerName %>.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "spinner"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "koa-behaviors": "KingofApp/koa-behaviors#^0.11.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
