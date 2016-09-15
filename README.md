@@ -23,5 +23,5 @@ yo koa-spinner
 
 ## License
 
-MIT © [King of APp](https://github.com/KingofApp)
+MIT © [King of App](https://github.com/KingofApp)
 

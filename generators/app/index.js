@@ -6,72 +6,72 @@ var yosay = require('yosay');
 module.exports = yeoman.Base.extend({
   prompting: function () {
     this.log(yosay(
-      'Welcome to '+chalk.red('King of App ')+chalk.blue('Spinner Generator')+'!'
+      'Welcome to ' + chalk.red('King of App ') + chalk.blue('Spinner Generator') + '!'
     ));
 
     return this.prompt([{
-      type    : 'input',
-      name    : 'spinnerName',
-      message : 'Your Spinner name',
-      default : 'new-spinner'
+      type: 'input',
+      name: 'spinnerName',
+      message: 'Your Spinner name',
+      required: true
     }, {
-      type    : 'input',
-      name    : 'userName',
-      message : 'Your Name'
+      type: 'input',
+      name: 'userName',
+      message: 'Your Name'
     }, {
-      type    : 'input',
-      name    : 'spanishDescription',
-      message : 'Spanish Description'
+      type: 'input',
+      name: 'spanishDescription',
+      message: 'Spanish Description'
     }, {
-      type    : 'input',
-      name    : 'englishDescription',
-      message : 'English Description'
+      type: 'input',
+      name: 'englishDescription',
+      message: 'English Description'
     }, {
-      type    : 'input',
-      name    : 'price',
-      message : 'Price'
+      type: 'inpt',
+      name: 'license',
+      message: 'License',
+      default: 'MIT'
     }, {
-      type    : 'confirm',
-      name    : 'showOnMarket',
-      message : 'Would you like to show your spinner in our market?'
+      type: 'input',
+      name: 'categories',
+      message: 'Enter your categories separated with commas'
+    }, {
+      type: 'input',
+      name: 'price',
+      message: 'Price'
     }]).then(function (answers) {
-
       this.log('Thanks! The process will start now...');
-      
-      this.spinnerName = answers.spinnerName;
+
+      this.spinnerName = fixSpinnerName(answers.spinnerName, '-');
       this.userName = answers.userName;
       this.spanishDescription = answers.spanishDescription;
-      this.englishDescription = answers.englishDescription;      
+      this.englishDescription = answers.englishDescription;
+      this.license = answers.license;
+      this.categories = fixSpinnerCategories(answers.categories);
       this.price = answers.price;
-      this.showOnMarket = answers.showOnMarket;
-      
     }.bind(this));
-    
   },
 
   writing: function () {
     var _self = this;
-    
-    console.log("Spinner Name1", this.spinnerName);
-    
-    var folder = "/koapp-spinner-"+this.spinnerName;
-    
+
+    var folder = '/koapp-spinner-' + this.spinnerName;
+
     this.destinationRoot(this.destinationPath() + folder);
-    
+
     var spinnerInput = {
       spinnerName: _self.spinnerName,
       userName: _self.userName,
       spanishDescription: _self.spanishDescription,
       englishDescription: _self.englishDescription,
-      price: _self.price,
-      showOnMarket: _self.showOnMarket 
+      license: _self.license,
+      categories: _self.categories,
+      price: _self.price
     };
-    
-    console.log("Spinner Name2", spinnerInput.spinnerName);
-    
+
     this.fs.copyTpl(
       this.templatePath('koapp-spinner.html'),
-      this.destinationPath('koapp-spinner-'+this.spinnerName+'.html'),
+      this.destinationPath('koapp-spinner-' + this.spinnerName + '.html'),
       spinnerInput
     );
 
@@ -79,7 +79,7 @@ module.exports = yeoman.Base.extend({
       this.templatePath('_bowerrc'),
       this.destinationPath('.bowerrc')
     );
-    
+
     this.fs.copyTpl(
       this.templatePath('config.json'),
       this.destinationPath('config.json'),
@@ -91,7 +91,22 @@ module.exports = yeoman.Base.extend({
       this.destinationPath('bower.json'),
       spinnerInput
     );
-    
-    
   }
 });
+
+/** Function that validate the Spinner name
+* @returns {String}
+*/
+function fixSpinnerName(name, ReplaceSymbol) {
+  name = name.toLowerCase().trim();
+  return name.replace(/ /g, ReplaceSymbol);
+}
+
+/** Function that validate the Categories
+* @returns {String}
+*/
+function fixSpinnerCategories(list) {
+  list = list.replace(/ /g, '').toLowerCase().trim();
+  var arrayCategories = list.split(',');
+  return JSON.stringify(arrayCategories);
+}

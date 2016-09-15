@@ -7,7 +7,7 @@
   },
   "version": "0.0.1",
   "author": "<%= userName %>",
-  "category": ["spinner"],
+  "category": <%- categories %>,
   "price": <%= price %>,
   "platforms": [
     "android",
@@ -15,7 +15,7 @@
     "windows"
   ],
   "showOn": {
-    "market": <%= showOnMarket %>
+    "market": true
   },
   "subscription": false,
   "main": "spinners/koapp-spinner-<%= spinnerName %>/koapp-spinner-<%= spinnerName %>.html"

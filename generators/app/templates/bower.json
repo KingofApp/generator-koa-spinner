@@ -9,7 +9,7 @@
   "keywords": [
     "spinner"
   ],
-  "license": "MIT",
+  "license": "<%= license %>",
   "homepage": "",
   "private": true,
   "ignore": [
