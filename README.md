@@ -1,13 +1,29 @@
 # generator-koapp-spinner
 
-
 ![Koa-logo](http://kingofapp.es/wp-content/uploads/2015/02/logoking-r1.png)
 
 > Scaffold out a King of App Spinner
 
-# Important
+## Installation
 
-This package is not yet in NPM. Until then the best way to use it is:
+First, install [Yeoman](http://yeoman.io) and generator-koapp-spinner using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+
+```bash
+npm install -g yo
+npm install -g generator-koapp-spinner
+```
+
+Then generate your new project:
+
+```bash
+yo koapp-spinner
+```
+
+### Contribution
+
+Please open an issue with your suggestion/question.
+
+If you want to improve the code, please follow these steps and submit a pull request.
 
 - Download
 ```bash
@@ -32,22 +48,6 @@ yo
 - Test your changes ;-)
 ```bash
 npm test
-```
-
-
-## Installation
-
-First, install [Yeoman](http://yeoman.io) and generator-koapp-spinner using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
-
-```bash
-npm install -g yo
-npm install -g generator-koapp-spinner
-```
-
-Then generate your new project:
-
-```bash
-yo koapp-spinner
 ```
 
 ## License
