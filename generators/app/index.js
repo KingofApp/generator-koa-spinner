@@ -12,12 +12,12 @@ module.exports = yeoman.Base.extend({
     return this.prompt([{
       type: 'input',
       name: 'spinnerName',
-      message: 'Your Spinner name',
+      message: 'Spinner name',
       required: true
     }, {
       type: 'input',
       name: 'userName',
-      message: 'Your Name'
+      message: 'Author\'s name'
     }, {
       type: 'input',
       name: 'spanishDescription',
@@ -34,7 +34,7 @@ module.exports = yeoman.Base.extend({
     }, {
       type: 'input',
       name: 'categories',
-      message: 'Enter your categories separated with commas'
+      message: 'Categories (comma to split)'
     }, {
       type: 'input',
       name: 'price',

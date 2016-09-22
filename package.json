@@ -1,6 +1,6 @@
 {
-  "name": "generator-koa-spinner",
-  "version": "0.0.1",
+  "name": "generator-koapp-spinner",
+  "version": "0.1.0",
   "description": "Scaffold out a King of App Spinner",
   "homepage": "http://kingofapp.com/",
   "author": {
@@ -43,7 +43,7 @@
       "mocha": true
     }
   },
-  "repository": "KingofApp/generator-koa-spinner",
+  "repository": "KingofApp/generator-koapp-spinner",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

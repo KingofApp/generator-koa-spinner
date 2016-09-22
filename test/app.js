@@ -3,7 +3,7 @@ var path = require('path');
 var assert = require('yeoman-assert');
 var helpers = require('yeoman-test');
 
-describe('generator-koa-spinner:app', function () {
+describe('generator-koapp-spinner:app', function () {
   this.timeout(15000);
 
   var anwsers = {
