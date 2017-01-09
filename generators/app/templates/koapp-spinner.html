@@ -1,7 +1,7 @@
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/koa-behaviors/koa-spinner-behavior.html">
 
-<dom-module id="koapp-spinner-<%= spinnerName %>">
+<dom-module id="koapp-spinner-<%= pluginName %>">
   <template strip-whitespace>
     <style>
       /* write your template style here */
@@ -16,7 +16,7 @@
 
   <script>
     Polymer({
-      is: 'koapp-spinner-<%= spinnerName %>',
+      is: 'koapp-spinner-<%= pluginName %>',
       behaviors: [
         Polymer.KoaSpinnerBehavior
       ]

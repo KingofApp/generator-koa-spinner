@@ -1,6 +1,6 @@
 {
   "name": "generator-koapp-spinner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Scaffold out a King of App Spinner",
   "homepage": "http://kingofapp.com/",
   "author": {
@@ -19,8 +19,9 @@
     "polymer"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.23.0",
     "chalk": "^1.0.0",
+    "koapp": "0.0.5",
+    "yeoman-generator": "^0.23.0",
     "yosay": "^1.0.0"
   },
   "devDependencies": {

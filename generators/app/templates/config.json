@@ -1,6 +1,6 @@
 {
-  "name": "<%= spinnerName %>",
-  "identifier": "koapp-spinner-<%= spinnerName %>",
+  "name": "<%= pluginName %>",
+  "identifier": "koapp-spinner-<%= pluginName %>",
   "description": {
     "en-US" : "<%= spanishDescription %>",
     "es-ES" : "<%= englishDescription %>"
@@ -18,5 +18,5 @@
     "market": true
   },
   "subscription": false,
-  "main": "spinners/koapp-spinner-<%= spinnerName %>/koapp-spinner-<%= spinnerName %>.html"
+  "main": "spinners/koapp-spinner-<%= pluginName %>/koapp-spinner-<%= pluginName %>.html"
 }
