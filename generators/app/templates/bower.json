@@ -1,8 +1,8 @@
 {
-  "name": "koapp-spinner-<%= spinnerName %>",
+  "name": "koapp-spinner-<%= pluginName %>",
   "authors": "<%= userName %>",
-    "description": "<%= englishDescription %>",
-  "main": "koapp-spinner-<%= spinnerName %>.html",
+  "description": "<%= englishDescription %>",
+  "main": "koapp-spinner-<%= pluginName %>.html",
   "moduleType": [
     "globals"
   ],
@@ -10,7 +10,7 @@
     "spinner"
   ],
   "license": "<%= license %>",
-  "homepage": "",
+  "homepage": "<%= homepage %>",
   "private": true,
   "ignore": [
     "**/.*",
