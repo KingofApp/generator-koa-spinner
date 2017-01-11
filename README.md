@@ -16,8 +16,18 @@ npm install -g generator-koapp-spinner
 Then generate your new project:
 
 ```bash
-yo koapp-spinner
+yo koapp-spinner -n spinnerName
 ```
+
+Optionally, you can include the following flags:
+
+* `-u authorName`
+* `-w authorHomepage`
+* `-s spanishDescription`
+* `-e englishDescription`
+* `-p price`
+* `-l license`
+* `-c categories` separated by comma
 
 ### Contribution
 
@@ -53,4 +63,3 @@ npm test
 ## License
 
 MIT © [King of App](https://github.com/KingofApp)
-
