@@ -1,13 +1,19 @@
 {
   "name": "generator-koapp-spinner",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Scaffold out a King of App Spinner",
   "homepage": "http://kingofapp.com/",
-  "author": {
+  "author": "King of App",
+  "contributors": [{
     "name": "Ulises Gascón",
     "email": "ulises@kingofapp.es",
     "url": "https://github.com/UlisesGascon"
   },
+  {
+    "name": "Fran Quesada",
+    "email": "paco@kingofapp.es",
+    "url": "https://github.com/totegsito"
+  }],
   "files": [
     "generators"
   ],
