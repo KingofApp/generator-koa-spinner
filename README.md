@@ -16,7 +16,7 @@ npm install -g generator-koapp-spinner
 Then generate your new project:
 
 ```bash
-yo koapp-spinner -n spinnerName
+yo koapp-spinner spinnerName
 ```
 
 Optionally, you can include the following flags:
@@ -52,12 +52,7 @@ npm link
 
 - Execute it
 ```bash
-yo
-```
-
-- Test your changes ;-)
-```bash
-npm test
+yo koapp-spinner spinnerName
 ```
 
 ## License
