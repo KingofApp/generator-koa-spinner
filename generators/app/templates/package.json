@@ -1,0 +1,8 @@
+{
+  "name": "<%- pluginName %>",
+  "version": "0.0.1",
+  "description": "<%- englishDescription %>",
+  "author": "<%- userName %>",
+  "license": "<%- license %>",
+  "keywords": ["koapp", "koapp spinner", "king of app"]
+}

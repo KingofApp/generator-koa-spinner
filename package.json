@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "chalk": "^1.0.0",
-    "koapp": "0.0.5",
+    "koapp": "^0.0.6",
     "yeoman-generator": "^0.23.0",
     "yosay": "^1.0.0"
   },
