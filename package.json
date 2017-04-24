@@ -3,7 +3,11 @@
   "version": "0.2.4",
   "description": "Scaffold out a King of App Spinner",
   "homepage": "http://kingofapp.com/",
-  "author": "King of App",
+  "author": {
+    "name": "koapp",
+    "email": "contact@kingofapp.es",
+    "url": "http://www.kingofapp.com"
+  },
   "contributors": [{
     "name": "Ulises Gascón",
     "email": "ulises@kingofapp.es",
