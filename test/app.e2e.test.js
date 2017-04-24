@@ -26,10 +26,10 @@ describe('generator-koapp-spinner:app', function () {
   };
 
   before(function () {
-    return helpers.run(path.join(__dirname, '../generators/app'))
-      .withArguments([spinnerName])
-      .withOptions(anwsers)
-      .toPromise();
+    helpers.run(path.join(__dirname, '../generators/app'))
+      .withArguments([answers.pluginName])
+      .withOptions(answers)
+      .on('end', done);
   });
 
   it('creates file koapp-spinner-' + anwsersExpected.spinnerName + '.html', function () {
