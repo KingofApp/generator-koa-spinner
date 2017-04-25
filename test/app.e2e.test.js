@@ -27,7 +27,7 @@ describe('generator-koapp-spinner:app', function () {
 
   before(function () {
     helpers.run(path.join(__dirname, '../generators/app'))
-      .withArguments([answers.pluginName])
+      .withArguments([spinnerName])
       .withOptions(answers)
       .on('end', done);
   });
