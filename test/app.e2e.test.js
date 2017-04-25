@@ -6,7 +6,7 @@ var helpers = require('yeoman-test');
 describe('generator-koapp-spinner:app', function () {
   this.timeout(15000);
   var spinnerName = '   new spinner';
-  var anwsers = {
+  var answers = {
     userName: 'Yo Mismo',
     spanishDescription: 'Mi nuevo Spinner',
     englishDescription: 'My new Spinner',
@@ -25,11 +25,11 @@ describe('generator-koapp-spinner:app', function () {
     price: 0
   };
 
-  before(function () {
-    return helpers.run(path.join(__dirname, '../generators/app'))
+  before(function (done) {
+    helpers.run(path.join(__dirname, '../generators/app'))
       .withArguments([spinnerName])
-      .withOptions(anwsers)
-      .toPromise();
+      .withOptions(answers)
+      .on('end', done);
   });
 
   it('creates file koapp-spinner-' + anwsersExpected.spinnerName + '.html', function () {

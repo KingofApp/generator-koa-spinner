@@ -1,9 +1,13 @@
 {
   "name": "generator-koapp-spinner",
-  "version": "0.2.4",
+  "version": "1.0.1",
   "description": "Scaffold out a King of App Spinner",
   "homepage": "http://kingofapp.com/",
-  "author": "King of App",
+  "author": {
+    "name": "koapp",
+    "email": "contact@kingofapp.es",
+    "url": "http://www.kingofapp.com"
+  },
   "contributors": [{
     "name": "Ulises Gascón",
     "email": "ulises@kingofapp.es",
@@ -31,7 +35,7 @@
   },
   "devDependencies": {
     "yeoman-test": "1.0.0",
-    "yeoman-assert": "2.0.0",
+    "yeoman-assert": "^3.0.0",
     "eslint": "3.1.1",
     "eslint-config-xo-space": "0.14.0",
     "gulp": "3.9.0",
