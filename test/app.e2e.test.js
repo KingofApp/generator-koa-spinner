@@ -25,7 +25,7 @@ describe('generator-koapp-spinner:app', function () {
     price: 0
   };
 
-  before(function () {
+  before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .withArguments([spinnerName])
       .withOptions(answers)
