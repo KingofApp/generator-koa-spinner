@@ -6,7 +6,7 @@ var helpers = require('yeoman-test');
 describe('generator-koapp-spinner:app', function () {
   this.timeout(15000);
   var spinnerName = '   new spinner';
-  var anwsers = {
+  var answers = {
     userName: 'Yo Mismo',
     spanishDescription: 'Mi nuevo Spinner',
     englishDescription: 'My new Spinner',
